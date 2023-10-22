@@ -54,9 +54,12 @@ a{
     position: relative;
 }
 .section-1{
-    min-width: 70vw;
+    min-width: 80vw;
     min-height: 100vh;
     position: relative;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
     /* border:2px solid whitesmoke; */
 }
 nav{
@@ -287,4 +290,49 @@ nav a{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+/* section-4 skills */
+.section-4{
+    width: 70vw;
+    min-height: 20vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:20px;
+    padding:10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.section-4 h2{
+    font-size: 3rem;
+}
+.skillsbox{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding-bottom: 70px;
+}
+.skillsbox span{
+    background-color: rgb(42,48,54);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    animation: colors 3s infinite linear;
+    cursor:default
+}
+@keyframes colors {
+    0%,100%{
+        background-color: rgb(70, 70, 70);
+    }
+    25%{
+        background-color: rgb(60, 60, 60);
+    }
+    50%{
+        background-color: rgb(50, 50, 50);
+    }
+    75%{
+        background-color: rgb(40, 40, 40);
+    }
 }

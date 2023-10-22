@@ -166,3 +166,44 @@ sociallinks.forEach((link) => {
         })
     })
 })
+
+// conatctme
+var skills = document.querySelectorAll(".skillsbox span");
+skills.forEach((link) => {
+    link.addEventListener("mousemove", (dets) => {
+        var dims = link.getBoundingClientRect();
+        var xstart = dims.x;
+        var xend = xstart + dims.width;
+
+        var zeroOne = gsap.utils.mapRange(xstart, xend, 0, 1, dets.clientX);
+
+
+        var dimsy = link.getBoundingClientRect();
+        var ystart = dimsy.y;
+        var yend = ystart + dimsy.height;
+
+        var zerotwo = gsap.utils.mapRange(ystart, yend, 0, 1, dets.clientY);
+
+        gsap.to(link, {
+            x: lerp(-20, 20, zeroOne),
+            y: lerp(-20, 20, zerotwo),
+            duration: .3,
+            ease: Expo
+        });
+        gsap.to(cursor,{
+            scale:2
+        })
+    })
+    link.addEventListener("mouseleave", () => {
+
+        gsap.to(link, {
+            x: 0,
+            y: 0,
+            duration: .3,
+            ease: Expo
+        })
+        gsap.to(cursor,{
+            scale:1
+        })
+    })
+})
