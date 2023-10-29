@@ -54,8 +54,8 @@ asidebtn.addEventListener("mousemove", function (dets) {
     var zerotwo = gsap.utils.mapRange(ystart, yend, 0, 1, dets.clientY);
 
     gsap.to(this, {
-        x: lerp(-100, 100, zeroOne),
-        y: lerp(-100, 100, zerotwo),
+        x: lerp(-50, 50, zeroOne),
+        y: lerp(-50, 50, zerotwo),
         duration: .3,
         ease: Expo
     })

@@ -116,6 +116,7 @@ nav a{
     background-color:rgb(17,17,17);
     box-shadow: rgba(33, 33, 35, 0.2) 0px 6px 20px;
     transition: width height 1s ease;
+    cursor: pointer;
 }
 /* aside-nav  */
 .aside-nav{
