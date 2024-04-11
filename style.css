@@ -147,8 +147,9 @@ nav a{
     border-radius: 0;
 }
 .aside-nav p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: silver;
+    line-height: 1.9rem;
 }
 .aside-nav a{
     color: silver;
@@ -215,6 +216,7 @@ nav a{
 }
 .single-down p{
     margin-top: 5px;
+    line-height: 1.5rem;
 }
 .single-techstack {
     margin-top: 10px;
@@ -253,6 +255,7 @@ nav a{
 .name-desc p{
     font-size: 1.3rem;
     margin-top: 20px;
+    line-height: 2rem;
 }
 .name-img{
     width: 40%;
@@ -294,7 +297,7 @@ nav a{
 }
 /* section-4 skills */
 .section-4{
-    width: 70vw;
+    width: 80vw;
     min-height: 20vh;
     flex-direction: column;
     flex-wrap: wrap;
